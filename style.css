@@ -287,7 +287,8 @@ footer {
     }
 }
 
-/* for mobile  */
+
+/* General Mobile Adjustments */
 @media (max-width: 768px) {
     body {
         padding: 10px;
@@ -299,53 +300,74 @@ footer {
 
     header h1 {
         font-size: 2rem;
+        text-align: center;
     }
 
     header p {
         font-size: 1rem;
+        text-align: center;
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 10px;
+        display: inline-block;
+    }
+
+    nav ul li a {
+        display: inline-block;
     }
 
     .section {
         padding: 50px 10px;
+        text-align: center;
     }
 
     h2 {
         font-size: 2rem;
+        text-align: center;
     }
 
     .card-grid {
         grid-template-columns: 1fr;
+        justify-content: center;
     }
 
     .card {
         padding: 20px;
+        margin: 0 auto;
+        text-align: center;
     }
 
     a.button {
         font-size: 0.9rem;
         padding: 10px 20px;
+        text-align: center;
     }
 
     footer {
         font-size: 0.8rem;
+        text-align: center;
     }
 
     /* Education Section Adjustments */
     .education-cards {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
     }
 
     .education-card {
         width: 100%;
+        text-align: center;
+    }
+
+    .education-card .card-content {
+        text-align: center;
     }
 }
