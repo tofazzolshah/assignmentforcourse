@@ -10,7 +10,7 @@
     transform: translateY(0);
 }
 
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -108,7 +108,6 @@ h2::after {
     margin: 10px auto;
 }
 
-/* Card Grid Styles */
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -143,7 +142,6 @@ h2::after {
     font-size: 1rem;
 }
 
-/* Button Styles */
 a.button {
     display: inline-block;
     background: #4e73df;
@@ -206,7 +204,6 @@ footer {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Section Heading */
 #education h2 {
     font-size: 2.8rem;
     font-weight: 700;
@@ -215,7 +212,6 @@ footer {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Cards Container */
 .education-cards {
     display: flex;
     justify-content: center;
@@ -223,7 +219,6 @@ footer {
     gap: 20px;
 }
 
-/* Individual Card Styles */
 .education-card {
     background: linear-gradient(135deg, #4e73df99, #f39c1299);
     border-radius: 15px;
@@ -272,7 +267,6 @@ footer {
     animation: float 2s infinite ease-in-out;
 }
 
-/* Float Animation */
 @keyframes float {
     0%, 100% {
         transform: translateY(0);
@@ -282,11 +276,73 @@ footer {
     }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .education-cards {
         flex-direction: column;
         align-items: center;
+    }
+
+    .education-card {
+        width: 100%;
+    }
+}
+
+/* for mobile  */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 40px 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 50px 10px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    a.button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    /* Education Section Adjustments */
+    .education-cards {
+        flex-direction: column;
+        align-items: stretch;
     }
 
     .education-card {

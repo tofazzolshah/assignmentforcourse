@@ -14,7 +14,6 @@ navLinks.forEach(link => {
     });
 });
 
-// Dynamic Typing Effect in Header Title
 const titleElement = document.getElementById("dynamic-title");
 const words = ["Welcome to My Portfolio", "I Am Tofazzol", "Web Developer", "Software Developer", "CSE Student"];
 let wordIndex = 0;
@@ -43,7 +42,6 @@ function eraseWords() {
 
 typeWords();
 
-// Scroll Animation for Sections
 const sections = document.querySelectorAll(".section");
 
 function revealSections() {
